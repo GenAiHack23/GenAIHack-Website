@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box; 
+    background-color: black;
+    font-family: 'Manrope', sans-serif;
+}
+.expert-heading
+{
+    margin: 0px;
+    padding: 0px;
+    font-size: 62px;
+    font-weight: 800;
+    background: linear-gradient(to right,#A04EF8, #FD7E3B ); 
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
+    text-align: center;
+}
+.expert-heading h1
+{
+    margin: 0px;
+    margin-bottom: 20px;
+}
+.OurExpert
+{
+    display: grid;
+    height: auto;
+    width: 100%;
+    grid-template-columns: 85%;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    row-gap: 50px;
+    margin-bottom: 20px;
+}
+.expert
+{
+    display: grid;
+    height: 300px;
+    width: 100%;
+    grid-template-columns: 25% 75%;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    border-radius: 25px;
+    padding-left: 30px;
+    padding-right: 20px;
+    box-shadow:  rgba(238, 246, 255, 0.8) 0 0 4px 4px;
+}
+.expert-image
+{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    background-color: aliceblue;
+}
+.expert-info h1
+{
+    font-family: 'Manrope', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    background: linear-gradient(to right,#A04EF8, #FD7E3B ); 
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+.expert-info
+{
+    color: white;
+    font-size: 22px;
+    text-align: justify;
+    height: 240px;
+}

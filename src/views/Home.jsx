@@ -1,3 +1,4 @@
+import OurExpert from "../components/OurExpert";
 import Footer from "../components/Footer";
 
 import "./home.css";
