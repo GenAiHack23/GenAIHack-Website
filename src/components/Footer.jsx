@@ -9,15 +9,11 @@ export default function Footer() {
         <div className="col-span-8">
           <h1 className="title">Gen-AI Hackathon 2023</h1>
         </div>
-        <div className="links col-span-2">
-          <h1 className="links-title">Links</h1>
-          <a className="link" href="https://www.instagram.com/genaihack/">
-            Instagram
-          </a>
-          <a className="link" href="https://twitter.com/GenAiHack">
-            Twitter
-          </a>
-          <a className="link">Sponsor Us</a>
+        <div className='links col-span-2'>
+          <h1 className='links-title'>Links</h1>
+          <a className='link' href='https://www.instagram.com/genaihack/'>Instagram</a>
+          <a className='link' href='https://twitter.com/GenAiHack'>Twitter</a>
+          <a className='link' href='https://https://docs.google.com/forms/'>Sponsor Us</a>
         </div>
         <div className="get-in-touch col-span-2">
           <h1 className="get-in-touch-title">Get in touch</h1>
