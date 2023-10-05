@@ -23,7 +23,7 @@
     font-weight: 600; /* 600 is usually the semi-bold font-weight for Montserrat */
     font-size: 60px;
     height: 154px;
-    left: 83px;
+    left: 17%;
     letter-spacing: -2.48px;
     line-height: 75px;
     position: absolute;
@@ -35,9 +35,9 @@
 
 .home .img {
     height: 75px;
-    left: 1vw;
+    left: 7%;
     position: relative;
-    top: 5vh;
+    top: -1vh;
     width: 818px;
 }
 
@@ -66,7 +66,7 @@
 
 .home .group {
     height: 75px;
-    left: 282px;
+    left: 25%;
     position: relative;
     top: 17px;
     width: 818px;
@@ -157,11 +157,11 @@
     font-size: 36px;
     font-weight: 600;
     height: 67px;
-    left: 589px;
+    left: 50%;
     letter-spacing: -1.44px;
     line-height: 75px;
     position: absolute;
-    text-align: center;
+    text-align: left;
     
     top: 0;
     white-space: nowrap;
