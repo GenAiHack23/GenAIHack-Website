@@ -1,11 +1,13 @@
 import React from "react";
 import "../components/OurExpert.css";
+
 export default function OurExpert() {
   return (
     <div className="expert_section">
       <div className="expert-heading">
         <h1>OUR EXPERT</h1>
       </div>
+
       <div className="OurExpert">
         <div className="expert">
           <div className="expert-image"></div>
@@ -20,6 +22,7 @@ export default function OurExpert() {
             Murakami.
           </div>
         </div>
+
         <div className="expert">
           <div className="expert-image"></div>
           <div className="expert-info">
