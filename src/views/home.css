@@ -1,0 +1,169 @@
+.home {
+    height: 100vh;
+    position: relative;
+    width: 100vw;
+    justify-content: center;
+}
+
+.home .overlap {
+    height: 193px;
+    left: 297px;
+    position: absolute;
+    top: 229px;
+}
+.home .heading {
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+    margin: auto;
+    width: 50%;
+    background: linear-gradient(90deg, rgb(126, 26, 232) 0%, rgb(251, 102, 21) 97.4%);
+    background-clip: text;
+    color: transparent;
+    font-family: 'Montserrat', sans-serif; /* Set Montserrat Semi-Bold as the font-family */
+    font-weight: 600; /* 600 is usually the semi-bold font-weight for Montserrat */
+    font-size: 60px;
+    height: 154px;
+    left: 17%;
+    letter-spacing: -2.48px;
+    line-height: 75px;
+    position: absolute;
+    text-align: center;
+    top: -10vh;
+    width: 680px;
+}
+
+
+.home .img {
+    height: 75px;
+    left: 7%;
+    position: relative;
+    top: -1vh;
+    width: 818px;
+}
+
+.home .frame {
+    height: 172px;
+    left: 32px;
+    position: relative;
+    top: 60%;
+    width: 1373px;
+
+}
+
+.home .overlap-group {
+    height: 160px;
+    position: relative;
+    top: 12px;
+}
+
+.home .group-wrapper {
+    height: 109px;
+    left: 0;
+    position: absolute;
+    top: 51px;
+    width: 1373px;
+}
+
+.home .group {
+    height: 75px;
+    left: 25%;
+    position: relative;
+    top: 17px;
+    width: 818px;
+}
+
+.home .text-wrapper {
+    color: #ffffff;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 22px;
+    font-weight: 400;
+    height: 75px;
+    left: 0;
+    letter-spacing: -0.88px;
+    line-height: 75px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    white-space: nowrap;
+}
+
+.home .div {
+    color: #ffffff;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 22px;
+    font-weight: 400;
+    height: 75px;
+    left: 177px;
+    letter-spacing: -0.88px;
+    line-height: 75px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    white-space: nowrap;
+}
+
+.home .text-wrapper-2 {
+    color: #ffffff;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 22px;
+    font-weight: 400;
+    height: 75px;
+    left: 355px;
+    letter-spacing: -0.88px;
+    line-height: 75px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    white-space: nowrap;
+}
+
+.home .text-wrapper-3 {
+    color: #ffffff;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 22px;
+    font-weight: 400;
+    height: 75px;
+    left: 533px;
+    letter-spacing: -0.88px;
+    line-height: 75px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    white-space: nowrap;
+}
+
+.home .text-wrapper-4 {
+    color: #ffffff;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 22px;
+    font-weight: 400;
+    height: 75px;
+    left: 711px;
+    letter-spacing: -0.88px;
+    line-height: 75px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    white-space: nowrap;
+}
+
+.home .title {
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(90deg, rgb(144, 40, 255) 0%, rgb(255, 98, 14) 100%);
+    background-clip: text;
+    color: transparent;
+    font-family: "Manrope-SemiBold", Helvetica;
+    font-size: 36px;
+    font-weight: 600;
+    height: 67px;
+    left: 50%;
+    letter-spacing: -1.44px;
+    line-height: 75px;
+    position: absolute;
+    text-align: left;
+    
+    top: 0;
+    white-space: nowrap;
+    width: 234px;
+}
