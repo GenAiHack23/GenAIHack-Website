@@ -19,7 +19,8 @@ const Home = () => {
                             <div className="text-wrapper-4">sponsor 5</div>
                         </div>
                     </div>
-                    <div className="title">Sponsors</div>
+                    <div className="heading1">
+                    <div className="title">Sponsors</div></div>
                 </div>
             </div>
         </div>

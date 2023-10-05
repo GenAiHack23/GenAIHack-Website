@@ -1,21 +1,24 @@
 .home {
     height: 100vh;
     position: relative;
-    width: 100vw;
+    width: 100%;
+    display: flex;
     justify-content: center;
 }
 
 .home .overlap {
     height: 193px;
-    left: 297px;
+    width: 100%;
     position: absolute;
     top: 229px;
+    display: flex;
+    justify-content: center
 }
 .home .heading {
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent;
     margin: auto;
-    width: 50%;
+    width: auto;
     background: linear-gradient(90deg, rgb(126, 26, 232) 0%, rgb(251, 102, 21) 97.4%);
     background-clip: text;
     color: transparent;
@@ -23,37 +26,40 @@
     font-weight: 600; /* 600 is usually the semi-bold font-weight for Montserrat */
     font-size: 60px;
     height: 154px;
-    left: 17%;
+    /* left: 17%; */
     letter-spacing: -2.48px;
     line-height: 75px;
     position: absolute;
     text-align: center;
     top: -10vh;
-    width: 680px;
+    
 }
 
 
 .home .img {
     height: 75px;
-    left: 7%;
+    /* left: 7%; */
     position: relative;
-    top: -1vh;
+    /* top: -1vh; */
     width: 818px;
 }
 
 .home .frame {
     height: 172px;
-    left: 32px;
+    /* left: 32px; */
     position: relative;
     top: 60%;
-    width: 1373px;
+    width: 100%;
 
 }
 
 .home .overlap-group {
     height: 160px;
+    width: 100%;
     position: relative;
     top: 12px;
+    display: flex;
+    justify-content: center;
 }
 
 .home .group-wrapper {
@@ -61,15 +67,21 @@
     left: 0;
     position: absolute;
     top: 51px;
-    width: 1373px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .home .group {
     height: 75px;
-    left: 25%;
+    /* left: 25%; */
+    /* display: flex; */
+    /* justify-content: center; */
     position: relative;
     top: 17px;
     width: 818px;
+    flex-wrap: nowrap;
+    flex-direction: row;
 }
 
 .home .text-wrapper {
@@ -146,12 +158,17 @@
     top: 0;
     white-space: nowrap;
 }
+.home .heading1{
+    display: flex;
+    justify-content: center;
+}
 
 .home .title {
-    -webkit-background-clip: text !important;
+    webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent;
     background: linear-gradient(90deg, rgb(144, 40, 255) 0%, rgb(255, 98, 14) 100%);
     background-clip: text;
+    width: fit-content;
     color: transparent;
     font-family: "Manrope-SemiBold", Helvetica;
     font-size: 36px;
@@ -160,10 +177,13 @@
     left: 50%;
     letter-spacing: -1.44px;
     line-height: 75px;
-    position: absolute;
+    /* position: absolute; */
     text-align: left;
-    
+    display: flex;
+    justify-content: center;
     top: 0;
     white-space: nowrap;
-    width: 234px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
 }
