@@ -1,0 +1,148 @@
+:root {
+    --orang: #fd7e3b;
+    --purpl: #a04ef8;
+  }
+.navbar {
+    margin-top: 20px;
+    background-color: #000000;
+    height: 70px;
+    width: 100%;
+}
+
+.navbar .nav {
+    height: 58px;
+    left: 135px;
+    position: relative;
+    top: 8px;
+    width: 1170px;
+}
+
+.navbar .div {
+    height: 25px;
+    left: 0;
+    position: absolute;
+    top: 16px;
+    width: 663px;
+}
+
+.navbar .text-wrapper {
+    color: #ffffff;
+    font-family: "Manrope-Medium", Helvetica;
+    font-size: 18px;
+    font-weight: 500;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    width: 56px;
+    transition: color 0.3s ease; /* Add a transition for the color property */
+}
+
+.navbar .text-wrapper:hover {
+    color: var(--purpl); /* Change the text color to purple on hover */
+}
+
+
+.navbar .text-wrapper-2 {
+    color: #ffffff;
+    font-family: "Manrope-Medium", Helvetica;
+    font-size: 18px;
+    font-weight: 500;
+    left: 122px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    width: 88px;
+    transition: color 0.3s ease;
+}
+.navbar .text-wrapper-2:hover {
+    color: #c879c4; /* Change the text color to purple on hover */
+}
+
+.navbar .text-wrapper-3 {
+    color: #ffffff;
+    font-family: "Manrope-Medium", Helvetica;
+    font-size: 18px;
+    font-weight: 500;
+    left: 276px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    width: 74px;
+    transition: color 0.3s ease;
+}
+.navbar .text-wrapper-3:hover {
+    color: #d07fb4;/* Change the text color to purple on hover */
+}
+
+.navbar .text-wrapper-4 {
+    color: #ffffff;
+    font-family: "Manrope-Medium", Helvetica;
+    font-size: 18px;
+    font-weight: 500;
+    left: 416px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    width: 91px;
+    transition: color 0.3s ease;
+}
+.navbar .text-wrapper-4:hover {
+    color:#de8995;  /* Change the text color to purple on hover */
+}
+
+.navbar .text-wrapper-5 {
+    color: #ffffff;
+    font-family: "Manrope-Medium", Helvetica;
+    font-size: 18px;
+    font-weight: 500;
+    left: 573px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    width: 80px;
+    transition: color 0.3s ease;
+}
+.navbar .text-wrapper-5:hover {
+    color:var(--orang); /* Change the text color to purple on hover */
+}
+
+.navbar .group {
+    height: 58px;
+    left: 95%;
+    position: relative;
+    top: -10px;
+    width: 171px;
+}
+
+.navbar .overlap-group-wrapper {
+    height: 58px;
+    width: 173px;
+}
+
+.navbar .overlap-group {
+    background-image: url(src/assets/rec.svg);
+    background-size: 100% 100%;
+    height: 58px;
+    position: relative;
+    width: 171px;
+}
+
+.navbar .text-wrapper-6 {
+    color: #ffffff;
+    font-family: "Manrope-Medium", Helvetica;
+    font-size: 18px;
+    font-weight: 500;
+    left: 50px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    width: 80px;
+}
