@@ -5,10 +5,10 @@
 ```bash
 git clone https://github.com/GenAiHack23/GenAIHack-Website.git
 cd GenAIHack-Website
-pnpm install
+npm install
 ```
 
 ## Run
 ```bash
-pnpm run dev
+npm run dev
 ```
