@@ -7,7 +7,7 @@ export default function Footer() {
       <div style={{ height: "50px" }}></div>
       <div className="grid grid-cols-12 items-center">
         <div className="col-span-8">
-          <h1 className="title">GenAI Hackathon 2023</h1>
+          <h1 className="title">Gen-AI Hackathon 2023</h1>
         </div>
         <div className="links col-span-2">
           <h1 className="links-title">Links</h1>
@@ -27,7 +27,7 @@ export default function Footer() {
         </div>
       </div>
       <div style={{ height: "50px" }}></div>
-      <p>© 2023 GenAi 23. All rights reserved.</p>
+      <p style={{ color: "white" }}>© 2023 Gen-Ai 23. All rights reserved.</p>
     </footer>
   );
 }
