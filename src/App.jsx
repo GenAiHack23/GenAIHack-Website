@@ -4,6 +4,7 @@ import Home from "./views/Home";
 import Footer from "./components/Footer";
 import OurExpert from "./components/OurExpert";
 import AboutUs from "./views/AboutUs";
+import { Characteristics } from "./components/Characteristics";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <Navbar />
       <Home />
       <AboutUs />
+      <Characteristics />
       <OurExpert />
       <Footer />
     </div>
