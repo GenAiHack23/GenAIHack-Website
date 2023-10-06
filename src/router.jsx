@@ -4,7 +4,7 @@ import { createBrowserRouter } from "react-router-dom";
 
 import App from "./App";
 import HomeView from "./views/Home";
-import AboutView from "./views/About";
+import { About as AboutView } from "./views/About";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
@@ -13,4 +13,4 @@ export const router = createBrowserRouter(
       <Route path="about" element={<AboutView />} />
     </Route>
   )
-)
+);
