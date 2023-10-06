@@ -25,6 +25,8 @@
 
 .heading-color {
   -webkit-background-clip: text !important;
+  background-clip: text;
+  /* back */
   -webkit-text-fill-color: transparent;
   background: linear-gradient(
     90deg,
