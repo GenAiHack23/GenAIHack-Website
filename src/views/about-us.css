@@ -1,14 +1,14 @@
+/* Default styles for larger screens */
 .frame {
-    height: 752px;
+    height: 30%;
+    margin-left: 30%;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-
 .frame .group2 {
     height: 652px;
-    /* left: 47px; */
     position: relative;
     top: 50px;
     width: 100%;
@@ -18,17 +18,16 @@
 
 .frame .overlap-group2 {
     background-color: #00000033;
-    border: 1px solid;
-    border-color: #cccccc;
+    border: 1px solid #cccccc;
     border-radius: 63px;
     box-shadow: 0px 0px 29px -13px #ffffff;
     height: 569px;
-    
     position: relative;
     top: -1px;
     width: 1349px;
     transition: box-shadow 0.3s ease;
 }
+
 .frame .overlap-group2:hover {
     box-shadow: 0px 0px 30px -5px #fd6e00;
 }
@@ -38,20 +37,36 @@
     font-family: "Manrope-Thin", Helvetica;
     font-size: 20px;
     font-weight: 400;
-    left: 496px;
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
     text-align: justify;
-    top: 151px;
+    left: 30%;
+    top: 30%;
     width: 823px;
+}
+
+.container {
+    position: absolute;
+    top: 10%;
+    left: 23%;
+    width: 50%;
+}
+
+.text {
+    display: inline;
+    width: 100%;
+}
+
+.read-or-hide {
+    color: #c0c0c0;
+    cursor: pointer;
 }
 
 .frame .ellipse {
     background-color: #d9d9d9;
     border-radius: 160px;
     height: 320px;
-    left: 86px;
     position: absolute;
     top: 166px;
     width: 320px;
@@ -66,11 +81,54 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 60px;
     font-weight: 800;
-    left: 540px;
     letter-spacing: -2.48px;
     line-height: 75px;
     position: absolute;
-    /* text-fill-color: transparent; */
     top: 9px;
-    /* width: 275px; */
+}
+
+/* Media query for smaller screens (adjust breakpoints as needed) */
+@media screen and (max-width: 768px) {
+    .frame {
+        flex-direction: column;
+        align-items: center;
+        height: 200%;
+        left: auto;
+    }
+
+    .frame .heading2 {
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent;
+        background: linear-gradient(90deg, rgb(144, 40, 255) 0%, rgb(255, 98, 14) 100%);
+        background-clip: text;
+        -webkit-animation: fadein 2s;
+        width: fit-content;
+        color: transparent;
+        font-family: "Manrope-SemiBold", Helvetica;
+        font-size: 36px;
+        font-weight: 600;
+        left: 40%;
+        text-align: center;
+        letter-spacing: -1.44px;
+        line-height: 75px;
+        display: flex;
+        justify-content: center;
+        top: 0;
+        white-space: nowrap;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .frame .genai-short-for {
+        width: 50%;
+        left: 40%;
+        top: 15%;
+    }
+
+    .frame .ellipse {
+        top: 25%;
+        left: 10%;
+        height: 30%;
+        width: 22%;
+    }
 }
