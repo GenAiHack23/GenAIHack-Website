@@ -33,6 +33,7 @@
     position: absolute;
     text-align: center;
     top: -10vh;
+    -webkit-animation: fadein 2s;
     
 }
 
@@ -119,6 +120,7 @@
     -webkit-text-fill-color: transparent;
     background: linear-gradient(90deg, rgb(144, 40, 255) 0%, rgb(255, 98, 14) 100%);
     background-clip: text;
+    -webkit-animation: fadein 2s;
     width: fit-content;
     color: transparent;
     font-family: "Manrope-SemiBold", Helvetica;
