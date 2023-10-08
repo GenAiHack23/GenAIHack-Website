@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import Navbar from "./views/Navbar";
+import Navbar from "./views/navbar";
 import Home from "./views/Home";
 import Footer from "./components/Footer";
 import OurExpert from "./components/OurExpert";
@@ -9,7 +9,7 @@ import Timeline from "./components/Timeline";
 
 export default function App() {
   return (
-    <div>
+    <div> 
       <Navbar />
       <Home />
       <AboutUs />

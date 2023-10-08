@@ -1,38 +1,55 @@
 // import React from "react";
+import {motion} from 'framer-motion';
 import {Link} from 'react-router-dom';
 import "./navbar.css";
+const icon = {
+  hidden: {
+    pathLength: 0,
+    fill: "rgba(255, 255, 255, 0)"
+  },
+  visible: {
+    pathLength: 1,
+    fill: "rgba(255, 255, 255, 1)"
+  }
+}
 
 export const Navbar = () => {
     return (
         <div className="navbar">
             <div className="nav">
-                <div className="div">
+                <div className="div2">
                     <Link to='/Home'>
-                        <div className="text-wrapper">Home</div>
+                        <motion.div className="text-wrapper" whileHover={{ scale: 1.2 }} whileTap={{ scale: 1.1 }}>Home</motion.div>
                     </Link>
                     <Link to='/about_us'>
-                        <div className="text-wrapper-2">About Us</div>
+                        <motion.div className="text-wrapper-2" whileHover={{ scale: 1.2 }} whileTap={{ scale: 1.1 }}>About Us</motion.div>
                     </Link>
                     <Link to='/experts'>
-                        <div className="text-wrapper-3">Experts</div>
+                        <motion.div className="text-wrapper-3" whileHover={{ scale: 1.2 }} whileTap={{ scale: 1.1 }}>Experts</motion.div>
                     </Link>
                     <Link to='/timeline'>
-                        <div className="text-wrapper-4">Time Line</div>
+                        <motion.div className="text-wrapper-4" whileHover={{ scale: 1.2 }} whileTap={{ scale: 1.1 }}>Time Line</motion.div>
                     </Link>
                     <Link to='/sponsor'>
-                        <div className="text-wrapper-5">Sponsor</div>
+                        <motion.div className="text-wrapper-5" whileHover={{ scale: 1.2 }} whileTap={{ scale: 1.1 }}>Sponsor</motion.div>
                     </Link>
                 </div>
-                <div className="group">
-                    <div className="overlap-group-wrapper">
-                        <div className="overlap-group">
-                            <Link to='/Register'>
-                                <div className="text-wrapper-6">Register</div>
-                            </Link>
-                            
+                <Link to='/Register'>
+                <motion.div className="group" 
+                    whileHover={{ scale: 1.2 }}
+                    whileTap={{ scale: 1.1 }}
+                    
+                >
+                        <div className="overlap-group-wrapper">
+                            <div className="overlap-group">
+                                
+                                    <div className="text-wrapper-6">Register</div>
+                                
+                                
+                            </div>
                         </div>
-                    </div>
-                </div>
+                    </motion.div>
+                </Link>
             </div>
         </div>
     );

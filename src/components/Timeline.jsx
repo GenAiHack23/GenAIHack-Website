@@ -97,8 +97,8 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 
-import Fade from "react-reveal/Fade";
-import React from "react";
+// import Fade from "react-reveal/Fade";
+// import React from "react";
 // import experienceData from "../../data/experience.json";
 
 export default function Experience() {
