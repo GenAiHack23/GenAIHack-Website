@@ -1,7 +1,7 @@
 /* Default styles for larger screens */
 .frame {
   height: 30%;
-  margin-left: 30%;
+  /* margin-left: 30%; */
   width: 100%;
   display: flex;
   justify-content: center;
@@ -70,6 +70,7 @@
   position: absolute;
   top: 166px;
   width: 320px;
+  margin-left: 4rem;
 }
 
 .frame .heading2 {
@@ -139,4 +140,22 @@
     height: 30%;
     width: 22%;
   }
+}
+
+.heading {
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(
+    90deg,
+    rgb(133, 31, 242) 0%,
+    rgb(250, 128, 62) 100%
+  );
+  background-clip: text;
+  color: transparent;
+  font-family: "Montserrat", sans-serif;
+
+  letter-spacing: -2.48px;
+  line-height: 75px;
+  /* top: 3rem; */
+  margin-top: 2rem;
 }
