@@ -1,0 +1,25 @@
+
+body {
+  padding: 50px;
+}
+
+.card {
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.title {
+  font-family: "Manrope", Helvetica;
+  font-size: 40px;
+  font-weight: bolder;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(
+    180deg,
+    #0D47A1 0%,
+    #64B5F6 100%
+  );
+  background-clip: text;
+  color: transparent;
+}
