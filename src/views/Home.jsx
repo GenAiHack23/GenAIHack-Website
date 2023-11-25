@@ -37,9 +37,12 @@ const Homee = () => (
             <img className="img2" src={logo} alt="-" />
         </motion.div>
         </div>
-        <div className="log">
+        <motion.div className="log"
+        initial={{ opacity: 0, scale: 0 }}
+        animate={{ opacity: 1, scale: 1}}
+        transition={{ duration: 1.5}}>
             <img className="img3" src={logo2} alt="-" />
-        </div>
+        </motion.div>
 
     </motion.div>
 );
