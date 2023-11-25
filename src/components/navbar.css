@@ -1,195 +1,136 @@
-:root {
-    --orang: #fd7e3b;
-    --purpl: #a04ef8;
-  }
-.navbar {
-    background-color: #000000;
-    /* height: 70px; */
-    width: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+.navbar-wrapper{
     display: flex;
-    align-content: center;
-    align-self: center;
-    /* justify-content: right; */
-    /* font-size: 20px; */
+    height: 35px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.08);
 }
 
-.navbar .nav {
-    /* height: 58px; */
-    /* left: 135px; */
-    position: relative;
-    /* top: 8px; */
-    width: 100%;
+.navbar{
+    width: 98%;
     display: flex;
-    justify-content: right;
-    align-content: center;
-    align-self: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.navbar .div2 {
-    /* height: 25px; */
-    left: 5%;
-    position: absolute;
-    /* top: 16px; */
-    width: 100%;
+.navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 50px;
+}
+
+.navbar ul li{
     font-size: 18px;
-    display: flex;
-    align-content: center;
-}
-
-.navbar .text-wrapper {
-    color: #ffffff;
-    font-family: "Manrope-Medium", Helvetica;
-    /* font-size: 18px; */
     font-weight: 500;
-    left: 2%;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 0;
-    width: auto;
-    transition: color 0.3s ease; /* Add a transition for the color property */
-}
-
-.navbar .text-wrapper:hover {
-    color: var(--purpl); /* Change the text color to purple on hover */
-}
-
-
-.navbar .text-wrapper-2 {
-    color: #ffffff;
-    font-family: "Manrope-Medium", Helvetica;
-    /* font-size: 18px; */
-    font-weight: 500;
-    left: 15%;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 0;
-    width: auto;
-    transition: color 0.3s ease;
-}
-.navbar .text-wrapper-2:hover {
-    color: #c879c4; /* Change the text color to purple on hover */
-}
-
-.navbar .text-wrapper-3 {
-    color: #ffffff;
-    font-family: "Manrope-Medium", Helvetica;
-    /* font-size: 18px; */
-    font-weight: 500;
-    left: 31%;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 0;
-    width: auto;
-    transition: color 0.3s ease;
-}
-.navbar .text-wrapper-3:hover {
-    color: #d07fb4;/* Change the text color to purple on hover */
-}
-
-.navbar .text-wrapper-4 {
-    color: #ffffff;
-    font-family: "Manrope-Medium", Helvetica;
-    /* font-size: 18px; */
-    font-weight: 500;
-    left: 45%;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 0;
-    width: auto;
-    transition: color 0.3s ease;
-}
-.navbar .text-wrapper-4:hover {
-    color:#de8995;  /* Change the text color to purple on hover */
-}
-
-.navbar .text-wrapper-5 {
-    color: #ffffff;
-    font-family: "Manrope-Medium", Helvetica;
-    /* font-size: 18px; */
-    font-weight: 500;
-    left: 59%;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 0;
-    width: auto;
-    transition: color 0.3s ease;
-}
-.navbar .text-wrapper-5:hover {
-    color:var(--orang); /* Change the text color to purple on hover */
-}
-
-.navbar .group {
-    height: 58px;
-    /* left: 95%; */
-    /* margin-right: 3%; */
-    right: 8%;
+    font-family: 'Manrope', sans-serif;
     position: relative;
-    top: -10px;
-    width: auto;
-    
+}
+
+.navbar button{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Manrope', sans-serif;
+    background-color: white;
+    padding-inline: 40px;
+    padding-block: 10px;
+    border: none;
+    position: relative;
+    border-radius: 4px;
+    right: 5%;
+}
+
+.navbar button::before{
+    content: "";
+    background: linear-gradient(0deg, rgba(152,207,234,1) 50%, rgba(0,69,147,1) 100%);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    scale: 1.1 1.25;
+    border-radius: 4px;
+}
+
+.active::after{
+    content: "";
+    width: 45px;
+    height: 20%;
+    background: #004593;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -50%;
+    border-radius: 4px;
     
 }
 
-.navbar .overlap-group-wrapper {
-    height: 50px;
-    width: 173px;
-}
-
-.navbar .overlap-group {
-    background-image: url(src/assets/rec.svg);
-    background-size: 100% 100%;
-    height: 58px;
-    position: relative;
-    width: 171px;
-}
-
-.navbar .text-wrapper-6 {
-    color: #ffffff;
-    font-family: "Manrope-Medium", Helvetica;
-    font-size: 18px;
-    font-weight: 500;
-    left: 50px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 20px;
-    left: 50px;
-    width: 80px;
-}
 @media screen and (max-width: 767px) {
-    .navbar .div2{
-        display: none;
+    .navbar ul li{
+        font-size: 6px;
     }
-    .group{
-        right: 5%;
-        
+    .navbar ul {
+        gap: 20px; 
+        margin-left: 0%;/* Adjust the gap for medium screens */
+        padding: 4px;
+    }
+    .navbar button {
+        font-size: 8px;
     }
 
+    .navbar button {
+        top: -1px;
+        padding: 5px 10px;
+        right: 5%;
+    }
+    .navbar{
+        width: 100%;
+    }
+    .navbar-wrapper{
+        padding: 10px;
+        height: 15px;
+    }
 }
 
+/* Media Query for Medium Screens */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
- 
+    .navbar-wrapper{
+        width: 100%;
+        /* scale: 0.95; */
+        font-size:14px ;
+        padding: 25px;
+    }
+    .navbar ul {
+        gap: 30px; /* Adjust the gap for medium screens */
+    }
+    .navbar ul li {
+        font-size: 14px;
+    }
+    .navbar button{
+        /* scale: 0.95; */
+        font-size: 14px;
+    }
+}
+
+/* Media Query for Large Screens */
+@media screen and (min-width: 1024px) {
+    .navbar-wrapper {
+        padding: 35px;
+    }
+
+    .navbar ul {
+        gap: 50px;
+        /* font-size: 16px ; Adjust the gap for large screens */
+    }
+    .navbar ul li {
+        
+        font-size: 16px ; /* Adjust the gap for large screens */
+    }
     
 }
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
-    /* Styles for tablets */
-    .navbar .div2{
-        font-size: 20px;
-    }
-    .navbar .group{
-        height: 50px;
-        
-    }
-}
-@media screen and (min-width: 1280px) and (max-width: 1919px) {
-    /* Styles for desktop */
-    .navbar .div2{
-        font-size: 20px;
-    }
-  }
-  
