@@ -1,38 +1,49 @@
-import OurExpert from "../components/OurExpert";
-import Footer from "../components/Footer";
-import {motion } from 'framer-motion';
-import "./home.css";
 
-const Home = () => {
-  return (
-    <div className="home">
-      <div className="overlap">
-        <motion.div className="heading" 
-        initial={{scale:0, opacity:0}} animate={{scale:1.2, opacity:100}} transition={{type:'tween',delay:0.2, duration: 0.5}}>
-          Gen-AI Hackathon 2023
-        </motion.div>
-        <motion.img className="imgg" alt="Heading" src="src/assets/Heading.svg" 
-          initial={{x:-600 ,opacity:0}} animate={{x:0, opacity:1}} transition={{delay:0.8,duration:0.5}}
-        />
-      </div>
-      <motion.div className="frame" >
-        <motion.div className="overlap-group" initial={{y:300 ,opacity:0}} animate={{y:0,opacity:1}} transition={{type:'tween',delay:1.5}}>
-          <div className="group-wrapper">
-            <div className="groupp">
-              <div className="text-wrapper">sponsor 1</div>
-              <div className="div">sponsor 2</div>
-              <div className="text-wrapper-2">sponsor 3</div>
-              <div className="text-wrapper-3">sponsor 4</div>
-              <div className="text-wrapper-4">sponsor 5</div>
-              <div className="text-wrapper-5">sponsor 6</div>
+import "./home.css";
+import subheading from "../assets/Heading.svg";
+import bg from "../assets/bg.svg";
+import logo from "../assets/logoo.svg";
+import logo2 from "../assets/logo2.png";
+import {motion} from "framer-motion";
+
+
+const Homee = () => (
+  
+    <motion.div className="home-wrapper"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1}}
+        transition={{ duration: 0.9 }} 
+    >
+        
+       
+        <motion.div className="heading-wrapper"
+            initial={{ opacity: 0, y: -100 }}
+            animate={{ opacity: 1, y: 0}}
+            transition={{ duration: 0.8 }}
+        >
+            <div className="heading">Gen-AI Hackathon 2023</div>
+            <div className="subheading-w">
+               <img className="sub-h" src={subheading} alt="-"/>
             </div>
-          </div>
-          <div className="heading1">
-            <motion.div className="title" >Sponsors</motion.div>
-          </div>
+            
         </motion.div>
-      </motion.div>
-    </div>
-  );
-};
-export default Home;
+        
+        <div className="bgimg" style={{ backgroundImage:`url(${bg})`,backgroundRepeat:"no-repeat" }}>
+        <motion.div className="logoo"
+        initial={{ opacity: 0, x: 900 }}
+        animate={{ opacity: 1, x: 0}}
+        transition={{ duration: 0.8,delay:0.5 }}
+        >
+            <img className="img2" src={logo} alt="-" />
+        </motion.div>
+        </div>
+        <motion.div className="log"
+        initial={{ opacity: 0, scale: 0 }}
+        animate={{ opacity: 1, scale: 1}}
+        transition={{ duration: 1.5}}>
+            <img className="img3" src={logo2} alt="-" />
+        </motion.div>
+
+    </motion.div>
+);
+export default Homee ;

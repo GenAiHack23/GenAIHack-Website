@@ -1,24 +1,11 @@
 import { Outlet } from "react-router-dom";
-import Navbar from "./views/navbar";
-import Home from "./views/Home";
-import Footer from "./components/Footer";
-import OurExpert from "./components/OurExpert";
-// import AboutUs from "./views/AboutUs";
-import { Characteristics } from "./components/Characteristics";
-import Timeline from "./components/Timeline";
-import AboutUs from "./views/about_us";
+import Navbar from "./components/Navbar";
 
 export default function App() {
   return (
-    <div> 
-      <Navbar />
-      <Home />
-      {/* <AboutUs /> */}
-      {/* <AboutUs /> */}
-      <Characteristics />
-      <OurExpert />
-      <Timeline />
-      <Footer />
+    <div>
+     <Navbar />
+      <Outlet />
     </div>
   );
 }

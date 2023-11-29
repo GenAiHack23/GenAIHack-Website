@@ -4,7 +4,7 @@ import { createBrowserRouter } from "react-router-dom";
 
 import App from "./App";
 import HomeView from "./views/Home";
-import { About as AboutView } from "./views/About";
+import AboutView from "./views/About";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
