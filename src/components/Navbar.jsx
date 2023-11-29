@@ -90,7 +90,6 @@ const Navbar = () => {
           <motion.div whileHover={{ scale:1.1}}  whileTap={{ scale: 0.9 }}><button>Register</button></motion.div>
         </div>
       </div>
-      <Outlet />
     </>
   );
 };
