@@ -2,9 +2,9 @@ import './about.css';
 
 export default function AboutView() {
   return (
-    <div>
-      <div className="card grid grid-cols-4 items-center">
-        <div className='col-span-1'>
+    <div style={{ padding: '30px' }}>
+      <div className="card grid grid-cols-1 items-center sm:grid-cols-4">
+        <div className='col-span-1 text-center'>
           <h1>abcd</h1>
         </div>
         <div className='col-span-3'>
@@ -39,7 +39,7 @@ export default function AboutView() {
       <div style={{ height: 80 }}></div>
       <h1 className='title'>Steps to Register</h1>
       <div style={{ height: 25 }}></div>
-      <div className='grid grid-cols-3 gap-4 text-center'>
+      <div className='grid sm:grid-cols-3 gap-4 text-center grid-cols-1'>
         <div className="card">
           <h1 className="title">1</h1>
           <div style={{ height: 15 }}></div>
