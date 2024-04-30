@@ -20,3 +20,13 @@
   background-clip: text;
   color: transparent;
 }
+
+.textcolour{
+  -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(180deg,
+        #0D47A1 0%,
+        #64B5F6 100%);
+    background-clip: text;
+    color: transparent;
+}
